@@ -7,6 +7,9 @@ let package = Package(
     platforms: [
         .macOS(.v10_15)
     ],
+    products: [
+        .executable(name: "NightShiftTool", targets: ["NightShiftTool"])
+    ],
     dependencies: [
         .package(url: "https://github.com/mhdhejazi/Dynamic", branch: "master"),
         .package(url: "https://github.com/apple/swift-argument-parser", from: "0.0.5"),
